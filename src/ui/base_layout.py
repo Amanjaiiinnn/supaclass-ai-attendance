@@ -35,6 +35,14 @@ def style_background_dashboard():
                     background: #E0E3FF !important;
                 }
 
+                .stApp [data-testid="stHeading"] *,
+                .stApp label,
+                .stApp [data-testid="stMarkdownContainer"] p,
+                .stApp input,
+                .stApp textarea {
+                    color: black !important;
+                }
+
         </style>  
 
                 """
@@ -90,6 +98,10 @@ def style_base_layout():
                 transition: transform 0.25s ease-in-out !important;
                 }
 
+            button *{
+                color: white !important;
+                }
+
             button[kind="secondary"]{
                 border-radius: 1.5rem !important;
                 background-color: #EB459E !important;
@@ -114,3 +126,4 @@ def style_base_layout():
 
                 """
             ,unsafe_allow_html=True)
+
