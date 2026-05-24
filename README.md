@@ -89,7 +89,6 @@ This app can be deployed on Streamlit Community Cloud. Add the Supabase credenti
 
 ### Important Notes
 Face recognition accuracy depends on the quality and number of registered face images. For better results, each student should ideally have multiple face samples. A strict matching threshold should be used to reduce wrong logins.
-Author
-Created by Aman.
-```
 
+###Author
+Created by Aman.
