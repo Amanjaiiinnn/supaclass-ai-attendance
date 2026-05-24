@@ -53,7 +53,7 @@ SNAPCLASS/
 └── .streamlit/
     └── secrets.toml ```
 
-
+```
 
 Database Tables
 The app expects these Supabase tables:
