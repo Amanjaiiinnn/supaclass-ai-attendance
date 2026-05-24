@@ -83,12 +83,12 @@ streamlit run app.py
 Students log in by capturing a face image. The app extracts a face embedding and compares it with stored student embeddings. If the face is recognized, the student dashboard opens. If not recognized, the student can register a new profile.
 
 Teachers log in with username and password. After login, teachers can create subjects, share join codes, take attendance using classroom photos, use voice attendance, and view attendance records.
-
+--- 
 ## Deployment
 This app can be deployed on Streamlit Community Cloud. Add the Supabase credentials in Streamlit secrets before running the hosted app.
-
+---
 ### Important Notes
 Face recognition accuracy depends on the quality and number of registered face images. For better results, each student should ideally have multiple face samples. A strict matching threshold should be used to reduce wrong logins.
-
-###Author
+---
+### Author
 Created by Aman.
