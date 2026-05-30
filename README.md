@@ -85,14 +85,30 @@ Run the app:
 
 streamlit run app.py
 ```
+## Project Explanation
 
-## How It Works
+SnapClass is an AI-based attendance management system built using Streamlit and Supabase. The main goal of this project is to make student attendance faster, smarter, and easier by using face recognition and optional voice recognition.
+
+The application has two main portals: Student and Teacher. Students can log in using FaceID. When a student captures their photo, the system detects the face, generates a face embedding, and compares it with the stored embeddings in the database. If the face is recognized, the student is logged in and can view enrolled subjects and attendance records. If the face is not recognized, the student can register a new profile.
+
+Teachers can register and log in using a username and password. Passwords are securely hashed using bcrypt before being stored. After login, teachers can create subjects, share subject codes or join links, manage enrolled students, take attendance using classroom photos, and view attendance records.
+
+For face recognition, the project uses dlib-based face embeddings and a machine learning classifier. Each detected face is converted into a numerical embedding, and the system predicts which student the face belongs to. A distance threshold is used to verify whether the detected face is close enough to a registered student.
+
+The project also includes optional voice enrollment and voice attendance. If a student records their voice during registration, the system can later compare classroom audio with stored voice embeddings to help mark attendance.
+
+Supabase is used as the backend database. It stores student profiles, teacher accounts, subjects, student-subject enrollments, face embeddings, voice embeddings, and attendance logs. Streamlit is used to build the user interface and manage the student and teacher dashboards.
+
+Overall, SnapClass demonstrates how AI, computer vision, voice processing, and cloud databases can be combined to build a practical attendance system.  
+
+
+### How It Works
 Students log in by capturing a face image. The app extracts a face embedding and compares it with stored student embeddings. If the face is recognized, the student dashboard opens. If not recognized, the student can register a new profile.
 
 Teachers log in with username and password. After login, teachers can create subjects, share join codes, take attendance using classroom photos, use voice attendance, and view attendance records.
 --- 
 
-## Deployment
+### Deployment
 This app can be deployed on Streamlit Community Cloud. Add the Supabase credentials in Streamlit secrets before running the hosted app.
 ---
 
