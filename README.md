@@ -3,6 +3,8 @@
 Hugging Face Space:  
 `https://supaclass.streamlit.app/`
 
+[Try the App](https://supaclass.streamlit.app/)
+
 # SnapClass
 
 SnapClass is an AI-powered attendance management system built with Streamlit. It uses face recognition for student login and classroom attendance, optional voice-based attendance, and Supabase for storing students, teachers, subjects, enrollments, and attendance records.
